@@ -1,10 +1,10 @@
 import "./App.scss";
+import FootballerList from "./widgets/FootballerBox/FootballerBox";
 
 function App() {
   return (
     <>
-      <h1>Widget Övning</h1>
-      <p>Hello</p>
+      <FootballerList></FootballerList>
     </>
   );
 }
