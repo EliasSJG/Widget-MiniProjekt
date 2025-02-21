@@ -4,6 +4,8 @@ import Button from "../../components/Button/button";
 import "./_FootballerBox.scss";
 
 export default function FootballerBox() {
+  //The existing footballers
+
   const [footballers, setFootballer] = useState<string[]>([
     "Ronaldo",
     "Messi",
@@ -14,12 +16,15 @@ export default function FootballerBox() {
     "Bellingham",
   ]);
 
+  //footballers input to get user value
   const [inputFootballer, setInput] = useState("");
 
+  //deleting footballer
   const deleteFootballer = (index: number) => {
     setFootballer(footballers.filter((_, i) => i !== index));
   };
 
+  // add footballer
   const addFootballer = () => {
     if (inputFootballer === "") {
       alert("You didnt enter a name!");
@@ -27,6 +32,8 @@ export default function FootballerBox() {
       setFootballer([...footballers, inputFootballer]);
     }
   };
+
+  //edit footballer
   const editFootballer = (footballer: string) => {
     if (inputFootballer === "") {
       alert("You didnt enter a name!");
