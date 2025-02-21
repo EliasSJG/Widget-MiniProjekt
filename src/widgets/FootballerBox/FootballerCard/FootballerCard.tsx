@@ -1,5 +1,7 @@
 import Button from "../../../components/Button/button";
 import "./_FootballerCard.scss";
+
+//Footballer props
 type FootballerProps = {
   index: number;
   footballerName: string;
@@ -16,6 +18,8 @@ function FootballerCard({
   return (
     <div className="FootballerItem">
       <h3>{footballerName}</h3>
+
+      {/* Individual delete and change for buttons*/}
       <Button
         title={"Delete"}
         handleClick={() => {
