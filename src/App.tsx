@@ -1,12 +1,14 @@
 import "./App.scss";
 import ExercisePart from "./pages/react-school/exercise";
-import FootballerList from "./widgets/FootballerBox/FootballerBox";
+import FootballerBox from "./widgets/FootballerBox/FootballerBox";
+import ZombieBox from "./widgets/ZombieBox/ZombieBox";
 
 function App() {
   return (
     <>
-      <FootballerList></FootballerList>
+      <FootballerBox></FootballerBox>
       <ExercisePart></ExercisePart>
+      <ZombieBox></ZombieBox>
     </>
   );
 }

@@ -3,7 +3,7 @@ import FootballerItem from "./FootballerCard/FootballerCard";
 import Button from "../../components/Button/button";
 import "./_FootballerBox.scss";
 
-export default function FootballerList() {
+export default function FootballerBox() {
   const [footballers, setFootballer] = useState<string[]>([
     "Ronaldo",
     "Messi",
